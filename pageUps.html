@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="./js/functionsFirebase.js"></script>
+    <script>
+        const status = statusPage();
+
+        if (status == true) {
+            window.location.href = "registro-1.html"
+        }
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #128807, #fff, #e70000);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* Degradado verde, blanco, rojo */
+        }
+
+        .maintenance-container {
+            text-align: center;
+        }
+
+        .maintenance-icon {
+            font-size: 100px;
+            color: #e74c3c;
+        }
+
+        .maintenance-title {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .maintenance-message {
+            font-size: 18px;
+            color: #555;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .maintenance-icon {
+            animation: bounce 2s infinite;
+        }
+
+        /* Estilos para el botón */
+        .personalize {
+
+            background-color: #efe26b;
+            color: #000000;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .personalize:hover {
+            background-color: #fff046;
+        }
+
+        .maintenance-title {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 32px;
+            color: #000000;
+        }
+
+        .maintenance-message {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 18px;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maintenance-container">
+        <div class="maintenance-icon">&#9917; &#127942;</div>
+        <div class="maintenance-title">- QUINIELA CERRADA -</div>
+        <br>
+        <div class="maintenance-message">En unas horas se abrira nuevamente las nuevas quinielas...</div>
+        <br>
+        <div class="maintenance-message">¿Aun no estas en nuestros grupo de Whatsapp? ¡NO TE QUEDES FUERA!</div>
+        <br>
+        <br>
+        <a href="https://wa.me/+524521152013?text=Hola%20quiero%20unirme"><button class="personalize">Unirse al Grupo
+                Whatsapp</button></a>
+    </div>
+</body>
+
+</html>
