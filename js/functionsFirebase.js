@@ -82,6 +82,16 @@ function generarUUID() {
 }
 
 /*#################################################################*/
+/* GENERAR RAMDON-UUID CORTO PARA ID CONJUNTO */
+/*#################################################################*/
+function generarShortUUID() {
+  return "xxxxxx".replace(/x/g, function () {
+    const r = (Math.random() * 16) | 0;
+    return r.toString(16);
+  });
+}
+
+/*#################################################################*/
 /* CONFIGURAR PARA ACTIVAR QUINIELAS */
 /*#################################################################*/
 function statusPage() {

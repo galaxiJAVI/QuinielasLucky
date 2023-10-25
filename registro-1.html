@@ -347,6 +347,7 @@
                             var timeDate = setConfigurationTimeDate();
 
                             const IdConjunto = timeDate.timestamp;
+                            const IdExtra = generarShortUUID();
                             console.log("Este es el id conjunto " + IdConjunto)
                             /*  */
 
@@ -385,7 +386,7 @@
                                             fecha: timeDate.registerTimeDate,
                                             status: false,
                                             isEspecial: true,
-                                            IdConjunto: IdConjunto,
+                                            IdConjunto: IdConjunto + '' + IdExtra,
                                         });
 
                                 }
